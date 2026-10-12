@@ -1,5 +1,5 @@
---Baþarýyla teslim edilmiþ sipariþlerin aylýk bazda toplam sipariþ sayýsýný, 
---ürün ve kargo gelirlerini ve ortalama sepet tutarýný hesaplayarak kronolojik bir performans raporu oluþturalým.
+--Basariyla teslim edilmis siparislerin aylik bazda toplam siparis sayisini, 
+--Ã¼rÃ¼n ve kargo gelirlerini ve ortalama sepet tutarini hesaplayarak kronolojik bir performans raporu olusturdum.
 WITH MonthlySales AS (
     SELECT
         YEAR(o.order_purchase_timestamp) AS OrderYear,
