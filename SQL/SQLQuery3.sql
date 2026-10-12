@@ -1,5 +1,5 @@
---Bu analizde Olist platformunda hangi satýcýlarýn en fazla gelir elde ettiðini belirleyeceðiz. 
---Ayrýca satýlan ürün adedini, sipariþ sayýsýný ve satýcýlarýn gelir sýralamasýný hesaplayacaðýz.
+--Bu analizde olist platformunda hangi saticilarin en fazla gelir elde ettigini belirleyip, 
+--ayrica satilan Ã¼rÃ¼n adedini, siparis sayisini ve saticilarin gelir siralamasini hesapladim.
 WITH SellerSales AS (
     SELECT
         s.seller_id,
