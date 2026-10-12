@@ -1,5 +1,5 @@
---Bu analizde hangi ürün kategorilerinin daha fazla gelir getirdiðini ve
---kaç ürün satýldýðýný hesaplayacaðýz.
+--Bu analizde hangi Ã¼rÃ¼n kategorilerinin daha fazla gelir getirdigini ve
+--kaÃ§ Ã¼rÃ¼n satildigini hesapladim.
 WITH CategorySales AS (
     SELECT
         COALESCE(
