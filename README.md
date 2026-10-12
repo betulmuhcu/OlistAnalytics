@@ -3,7 +3,7 @@
 Bu proje, Brezilya merkezli e-ticaret platformu **Olist**'e ait yaklaşık 100.000 sipariş verisini inceleyerek satış performansı, kategori analizi ve satıcı verimliliği üzerine kurgulanmış gelişmiş SQL sorgularını içerir.
 
 
-## 🔍 SQL Analiz Sorguları
+## SQL Analiz Sorguları
 
 ### 1. Aylık Satış ve Sepet Performansı 
 Platformun kronolojik büyümesini ve gelir akışlarını inceler.
@@ -27,7 +27,7 @@ Satıcıların platformdaki ciro katkılarını ve bulundukları şehir bazında
   - Satıcı Geliri ve Performans Sıralaması (`RevenueRank`)
   - Satıcı Şehir Bilgisi (*Seller City*)
 
-## 🗺️ Yol Haritası (Roadmap)
-- [x] T-SQL ile veri temizleme, birleştirme ve metrik hesaplama sorgularının hazırlanması
+## Yol Haritası (Roadmap)
+- [x] SQL ile veri temizleme, birleştirme ve metrik hesaplama sorgularının hazırlanması
 - [ ] Veri modelinin Power BI ortamına aktarılması
 - [ ] Satış, Kategori ve Satıcı performansını içeren etkileşimli Power BI Dashboard tasarımı
