@@ -10,7 +10,7 @@ Verilerin rapora hazır hale getirilmesi için CTE, Window Functions ve çeşitl
 * **Ürün Kategorisi Satış Analizi:** Eksik kategori verileri COALESCE ile standartlaştırılarak raporlama kalitesi artırılmıştır. Kategorilerin toplam gelir katkısı hesaplanmış ve RANK() OVER kullanılarak şirketin en çok kâr elde ettiği alanlar sıralanmıştır.
 * **Satıcı Liderlik Tablosu:** Platformdaki satıcıların şehir bazlı dağılımları ve sipariş karşılama başarıları analiz edilerek gelire dayalı bir satıcı sıralaması oluşturulmuştur.
 
-## 📈 Power BI İş Zekası Panosu
+## Power BI İş Zekası Panosu
 SQL üzerinden alınan anlamlı veriler, Power BI arayüzüne taşınmıştır
 * Tablolar arası ilişkiler kurulmuş ve "Çift Yönlü" çapraz filtreleme (Cross-Filtering) aktif edilerek tüm görsellerin birbiriyle anlık konuşması sağlanmıştır.
 
