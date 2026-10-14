@@ -11,8 +11,10 @@ Verilerin rapora hazır hale getirilmesi için CTE, Window Functions ve çeşitl
 * **Satıcı Liderlik Tablosu:** Platformdaki satıcıların şehir bazlı dağılımları ve sipariş karşılama başarıları analiz edilerek gelire dayalı bir satıcı sıralaması oluşturulmuştur.
 
 ## 📈 Power BI İş Zekası Panosu
-SQL üzerinden alınan anlamlı veriler, Power BI arayüzüne taşınmıştır:
+SQL üzerinden alınan anlamlı veriler, Power BI arayüzüne taşınmıştır
 * Tablolar arası ilişkiler kurulmuş ve "Çift Yönlü" çapraz filtreleme (Cross-Filtering) aktif edilerek tüm görsellerin birbiriyle anlık konuşması sağlanmıştır.
+
+* Dashboard Görseli:
 <img width="1312" height="718" alt="image" src="https://github.com/user-attachments/assets/d678d844-e3e6-45d8-9861-ec510d46315f" />
 
 
