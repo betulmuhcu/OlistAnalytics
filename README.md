@@ -1,33 +1,18 @@
-# Olist E-Ticaret Veri Analizi 
+# Uçtan Uca E-Ticaret Veri Analitiği: Olist (SQL & Power BI)
 
-Bu proje, Brezilya merkezli e-ticaret platformu **Olist**'e ait yaklaşık 100.000 sipariş verisini inceleyerek satış performansı, kategori analizi ve satıcı verimliliği üzerine kurgulanmış gelişmiş SQL sorgularını içerir.
+## Proje Özeti
+Bu proje, Brezilya merkezli e-ticaret platformu Olist'in gerçek dünya veri setini kullanarak bir iş zekası sürecini içermektedir. Karmaşık ham veriler **MS SQL Server** üzerinde gelişmiş sorgularla işlenmiş ve temizlenmiş, ardından **Power BI** kullanılarak etkileşimli bir dashboard yapılmıştır.
+
+## SQL Veri Analizi Süreçleri
+Verilerin rapora hazır hale getirilmesi için CTE, Window Functions ve çeşitli JOIN yapıları kullanılarak aşağıdaki analizler yapılmıştır:
+
+* **Aylık Performans ve Sepet Analizi:** Teslim edilen siparişlerin aylık bazda ürün ve kargo gelirleri toplanmış, kronolojik performans ve sipariş başına ortalama sepet tutarları hesaplanmıştır.
+* **Ürün Kategorisi Satış Analizi:** Eksik kategori verileri COALESCE ile standartlaştırılarak raporlama kalitesi artırılmıştır. Kategorilerin toplam gelir katkısı hesaplanmış ve RANK() OVER kullanılarak şirketin en çok kâr elde ettiği alanlar sıralanmıştır.
+* **Satıcı Liderlik Tablosu:** Platformdaki satıcıların şehir bazlı dağılımları ve sipariş karşılama başarıları analiz edilerek gelire dayalı bir satıcı sıralaması oluşturulmuştur.
+
+## 📈 Power BI İş Zekası Panosu
+SQL üzerinden alınan anlamlı veriler, Power BI arayüzüne taşınmıştır:
+* Tablolar arası ilişkiler kurulmuş ve "Çift Yönlü" çapraz filtreleme (Cross-Filtering) aktif edilerek tüm görsellerin birbiriyle anlık konuşması sağlanmıştır.
+<img width="1312" height="718" alt="image" src="https://github.com/user-attachments/assets/d678d844-e3e6-45d8-9861-ec510d46315f" />
 
 
-## SQL Analiz Sorguları
-
-### 1. Aylık Satış ve Sepet Performansı 
-Platformun kronolojik büyümesini ve gelir akışlarını inceler.
-- **Hesaplanan Metrikler:**
-  - Aylık Toplam Sipariş Sayısı
-  - Ürün Geliri (*Product Revenue*)
-  - Kargo Geliri (*Freight Revenue*)
-  - Ortalama Sepet Tutarı (*Average Order Value - AOV*)
-
-### 2. Kategori Bazlı Gelir Analizi 
-Portekizce ürün kategorilerini İngilizce karşılıklarıyla eşleştirerek kategorilerin gelir ve hacim performansını sıralar.
-- **Hesaplanan Metrikler:**
-  - Satılan Ürün Adedi ve Tekil Sipariş Sayısı
-  - Toplam Gelir
-  - Gelire Göre Kategori Sıralaması (`RevenueRank`)
-
-### 3. Satıcı Performansı ve Lokasyon Dağılımı
-Satıcıların platformdaki ciro katkılarını ve bulundukları şehir bazındaki hacimlerini analiz eder.
-- **Hesaplanan Metrikler:**
-  - Satıcı Bazlı Ürün ve Sipariş Hacmi
-  - Satıcı Geliri ve Performans Sıralaması (`RevenueRank`)
-  - Satıcı Şehir Bilgisi (*Seller City*)
-
-## Yol Haritası (Roadmap)
-- [x] SQL ile veri temizleme, birleştirme ve metrik hesaplama sorgularının hazırlanması
-- [ ] Veri modelinin Power BI ortamına aktarılması
-- [ ] Satış, Kategori ve Satıcı performansını içeren etkileşimli Power BI Dashboard tasarımı
